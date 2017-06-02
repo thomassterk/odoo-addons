@@ -20,7 +20,7 @@
 #
 ##############################################################################
 {
-    'name': 'MRP Stock Valuation',
+    'name': 'MRP Consumed Stock Valuation',
     'version': '8.0.0.0.1',
     'category': 'MRP',
     'author': 'Thomas Sterk',
