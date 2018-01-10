@@ -38,6 +38,5 @@ class ProductTemplate(models.Model):
                 for parent_bom_line in parent_bom.bom_line_ids:
                     line_price = parent_bom_line.product_id.standard_price *  parent_bom_line.product_qty
                     bom_price += line_price
-                _logger.debug("Updated BOM Price for %s = %s", product.name, bom_price)
                 parent_bom.product_id.write({'standard_price': bom_price})
         return super(ProductTemplate, self).write(vals)

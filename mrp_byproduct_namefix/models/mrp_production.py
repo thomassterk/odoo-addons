@@ -69,4 +69,3 @@ class MrpProduction(models.Model):
                 move_obj.action_confirm(cr, uid, [move_id], context=context)
 
         return picking_id
-        
